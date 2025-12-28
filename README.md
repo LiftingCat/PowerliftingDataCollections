@@ -1,2 +1,32 @@
-# PowerliftingDataCollections
-Collects Data for powerlifting
+# China Powerlifting Data (IPLCN & CPA) | 中国力量举比赛数据
+
+### 项目简介
+本项目收录并整理了中国两大力量举联盟 —— **IPLCN (IPL中国)** 与 **CPA (CPA力量举联盟)** 的历年比赛成绩数据。旨在为力量举爱好者、数据分析师及体育科研人员提供可供分析的数据样本。
+
+### 数据来源
+* **来源渠道**：所有原始数据均提取自 **“IPLCN”** 和 **“CPA力量举联盟”** 微信公众号发布的官方推文。
+* **时间范围**：数据截至 **2025年12月**。
+* **提取方式**：原始发布形式主要为长图/图片，本数据集通过 OCR（光学字符识别）及脚本自动化技术提取整理而成。
+
+### ⚠️ 免责声明 (Disclaimer) - 请务必阅读
+**本仓库提供的数据仅供学习和研究使用，非官方数据库。**
+
+1.  **数据准确性**：由于原始数据为图片格式，在 OCR 识别和提取过程中可能存在识别错误（如数字 `1` 识别为 `7`，或小数点位置偏移）。**作者不保证数据的准确性、完整性以及与原始公众号发布数据的一致性。**
+2.  **数据有效性**：本项目**未对原始数据进行严格的有效性判定** 请使用者在使用前自行清洗。
+3.  **版权说明**：比赛数据的原始版权归 IPLCN 及 CPA 联盟所有。如相关方认为本项目侵犯了您的权益，请联系作者删除。
+
+### 数据结构示例
+数据集通常包含以下字段（部分比赛可能缺失特定字段）：
+* `Federation`: 联盟 (IPLCN/CPA)
+* `Event`: 项目 (Full Power/Push Pull/Single Lift)
+* `Name`: 选手姓名
+* `Sex`: 性别
+* `Body Weight (bw)`: 体重
+* `Squat/Bench/Deadlift`: 三项成绩
+* `Total`: 总成绩
+* `Dots/GPA`: 系数分 (相对强弱指标)
+* `Is Tested`: 是否为药检赛 (推断字段)
+
+### Contact / Contribution
+如果您发现了明显的数据错误，欢迎提交 PR (Pull Request) 或 Issue 进行修正。
+If you find obvious errors, feel free to submit a PR or Issue.
