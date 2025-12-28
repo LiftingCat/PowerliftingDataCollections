@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Competition Metadata Schema",
+  "type": "object",
+  "required": ["comp_id", "title", "date"],
+  "properties": {
+    "comp_id": {
+      "type": "string",
+      "description": "比赛的唯一标识符，用于与结果文件关联"
+    },
+    "title": {
+      "type": "string",
+      "description": "赛事完整标题"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "比赛开始日期 (YYYY-MM-DD)"
+    },
+    "publish_time": {
+      "type": "string",
+      "description": "官方战报发布时间"
+    }
+  }
+}
